@@ -1,10 +1,9 @@
 import { useCallback, useState } from 'react'
 import axios from 'axios'
-import planeImage from './assets/plane.svg'
 import NavBar from './components/NavBar'
 import SearchBox from './components/SearchBox'
 import SearchButton from './components/SearchButton'
-import { API_URL, AXIOS_OPTIONS, DECODED } from './shared/CONSTANTS'
+// import { API_URL, AXIOS_OPTIONS, DECODED } from './shared/CONSTANTS'
 import MetarCard from './components/MetarCard'
 import MetarCardEmptyState from './components/MetarCardEmptyState'
 
@@ -14,11 +13,11 @@ function App() {
   const [airports, setAirports] = useState([])
 
   const getMetarData = () => {
-    const request = API_URL + icaoCode + DECODED
-    axios.get(request, AXIOS_OPTIONS).then((res) => {
-      const response = res.data
-      console.log(response)
-    })
+    // const request = API_URL + icaoCode + DECODED
+    // axios.get(request, AXIOS_OPTIONS).then((res) => {
+    //   const response = res.data
+    //   console.log(response)
+    // })
   }
 
 
