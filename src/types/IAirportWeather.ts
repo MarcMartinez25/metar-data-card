@@ -4,7 +4,7 @@ export interface IAirportWeather {
   temperature: number,
   dewpoint: number,
   relativeHumidity: number,
-  visibility: number,
+  visibility: string,
   windSpeed: number,
   windDirection: number,
   clouds: string
